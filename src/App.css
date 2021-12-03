@@ -1,39 +1,31 @@
-.App {
-  text-align: center;
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefc01;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__logo {
+    object-fit: contain;
+    height: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.app__bodyBackground {
+    /* you don't see it but it help us to have background-color white
+    in the app_body when we have transition before the render is given
+    by react so its pretty clean like this */
+    background-color: white;
+    height: 400px;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.app__body {
+    background-image: url("https://pngimg.com/uploads/iphone/iphone_PNG5721.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 410px;
+    background-size: contain;
+    width: 250px;
+    padding: 74px;
 }
